@@ -1,0 +1,24 @@
+graph TD;
+  L1["John Smith (CEO)"] --> L2_1["Alice Johnson (CTO)"]
+  L1 --> L2_2["Bob Williams (CFO)"]
+  L1 --> L2_3["Carol Davis (COO)"]
+  
+  L2_1 --> L3_1["David Miller (Dev Lead)"]
+  L2_1 --> L3_2["Emma Wilson (QA Lead)"]
+  L2_2 --> L3_3["Frank Thomas (Project Manager)"]
+  L2_3 --> L3_4["Grace Lee (HR Manager)"]
+  L2_3 --> L3_5["Henry Brown (Operations Manager)"]
+  
+  L3_3 --> L4_1["Ivy Chen (Developer)"]
+  L3_3 --> L4_2["Jack White (Developer)"]
+  L3_3 --> L4_3["Kelly Green (QA Engineer)"]
+  
+  classDef level1 fill:#f9f,stroke:#333,stroke-width:2px;
+  classDef level2 fill:#bbf,stroke:#333,stroke-width:1px;
+  classDef level3 fill:#ddf,stroke:#333,stroke-width:1px;
+  classDef level4 fill:#eff,stroke:#333,stroke-width:1px;
+  
+  class L1 level1;
+  class L2_1,L2_2,L2_3 level2;
+  class L3_1,L3_2,L3_3,L3_4,L3_5 level3;
+  class L4_1,L4_2,L4_3 level4;
